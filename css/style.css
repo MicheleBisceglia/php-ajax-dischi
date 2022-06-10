@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  background-color: #2e3a46;
+}
+header img {
+  width: 50px;
+  margin: 5px;
+}
+main {
+  background-color: #1e2d3b;
+  height: calc(100vh - 60px);
+}
