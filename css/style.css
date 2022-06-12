@@ -14,13 +14,10 @@ header img {
 }
 main {
   background-color: #1e2d3b;
-  height: calc(100vh - 60px);
   display: flex;
 }
 .my_card {
   border: 1px solid black;
   text-align: center;
   background-color: #2e3a46;
-  width: 80%;
-  margin: 0 auto;
 }
