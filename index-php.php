@@ -30,12 +30,13 @@
         <div class="row">
           <?php 
           foreach($database as $item) {
-        echo '<div class="col-2 my_card">' ; 
-          echo '<img class="w-50 m-5" src="' . $item['poster'] . '">' ;
-          echo '<p>' . $item['title'] . '</p>' ;
-          echo '<p>' . $item['author']. '</p>' ;
-          echo '<p>' . $item['year']. '</p>' ;
-          echo '<p>' . $item['genre']. '</p>' ;
+        echo '<div class="col-2">' ; 
+          echo '<div class="my_card h-100 pb-3">
+            <img class="w-75 m-3" src="' . $item['poster'] . '">' ;
+            echo '<h6>' . $item['title'] . '</h6>' ;
+            echo '<p">' . $item['author']. '</p>' ;
+            echo '<small>' . $item['year']. '</small>' ;
+          echo '</div>';
         echo '</div>';
         } ?>
         </div>
@@ -44,16 +45,17 @@
     <!-- /Milestone 2-->
       
     <!-- Milestone 2: stampa dischi con utilizzo di axios -->
-    <main id="root" class="text-light">
+    <main id="root" class="text-light pt-3">
       <div class="container">
         <div class="row">
-          <div class="col-2 my_card"
+          <div class="col-2"
             v-for="item in array">
-              <img :src="item.poster" class="w-50 m-5" alt="">
-              <p> {{ item.title }}</p>
+            <div class="my_card h-100 pb-3">
+              <img :src="item.poster" class="w-75 m-3" alt="">
+              <h6> {{ item.title }}</h6>
               <p> {{ item.author }}</p>
-              <p> {{ item.year }}</p>
-              <p> {{ item.genre }}</p>
+              <small> {{ item.year }}</small>
+            </div>
           </div>
         </div>
       </div>
